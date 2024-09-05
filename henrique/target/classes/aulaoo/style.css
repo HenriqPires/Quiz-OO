@@ -1,0 +1,138 @@
+.root {
+    -fx-background-image: url('https://img.freepik.com/fotos-gratis/fundo-abstrato-gradiente-azul-azul-escuro-liso-com-vinheta-preta-studio_1258-67766.jpg'); /* Caminho para a imagem de fundo */
+    -fx-background-size: cover; /*cover */
+    -fx-background-position: center;
+}
+ 
+/* Botão Próxima */
+.botao-proxima {
+    -fx-background-color: #2196F3; 
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-insets: 5px; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0, 0, 1);
+}
+.botao-proxima:hover {
+    -fx-background-color: #4d72b6; 
+}
+
+/* Botão Reiniciar */
+.botao-reiniciar {
+    -fx-background-color: #f44336; 
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-insets: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0, 0, 1);
+}
+.botao-reiniciar:hover {
+    -fx-background-color: #a31010; 
+}
+
+/* Botões de Alternativas */
+.botao {
+    -fx-background-color: #4c93af;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-insets: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+.botao:hover {
+    -fx-background-color: #475891;
+}
+
+/* Texto de Resultado */
+.texto-resultado {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #444;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0, 0, 1);
+}
+
+/* Adiciona o fundo da tela inicial */
+.tela-inicial {
+    -fx-background-color: #89e2ee; /* Cor de fundo clara */
+    -fx-padding: 20px; /* Padding ao redor do conteúdo */
+}
+
+/* Estilos para os botões da tela inicial */
+.botao-inicial {
+    -fx-background-color: #73b2db; /* Cor de fundo dos botões */
+    -fx-text-fill: white; /* Cor do texto dos botões */
+    -fx-font-size: 15px; /* Tamanho da fonte */
+    -fx-padding: 10px 20px; /* Padding interno */
+    -fx-border-radius: 5px; /* Bordas arredondadas */
+    -fx-background-radius: 5px; /* Bordas arredondadas do fundo */
+    -fx-background-insets: 5px; /* Insetos do fundo */
+    -fx-font-weight: bold; /* Fonte em negrito */
+}
+
+.botao-inicial:hover {
+    -fx-background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+.botao-inicial:active {
+    -fx-background-color: #388e3c; /* Cor de fundo ao clicar */
+}
+
+/* Estilos gerais da tela de cadastro */
+.tela-cadastro {
+    -fx-padding: 20px;
+    -fx-background-color: #f5f5f5; /* Cor de fundo clara */
+    -fx-alignment: center;
+    -fx-spacing: 10px;
+}
+
+/* Estilos para labels */
+.label-cadastro {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+/* Estilos para campos de texto */
+.text-field-cadastro {
+    -fx-pref-width: 300px;
+    -fx-padding: 5px;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+/* Estilos para botões */
+.botao-cadastro {
+    -fx-background-color: #007bff; /* Cor de fundo azul */
+    -fx-text-fill: white;
+    -fx-padding: 5px 15px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.botao-cadastro:hover {
+    -fx-background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Estilos para o botão "Voltar" */
+.botao-voltar {
+    -fx-background-color: #6c757d; /* Cor de fundo cinza */
+    -fx-text-fill: white;
+    -fx-padding: 5px 15px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.botao-voltar:hover {
+    -fx-background-color: #5a6268; /* Cinza mais escuro ao passar o mouse */
+}
