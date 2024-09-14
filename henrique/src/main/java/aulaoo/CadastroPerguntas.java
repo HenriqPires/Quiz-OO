@@ -71,6 +71,12 @@ public class CadastroPerguntas {
     private boolean salvarPergunta(String enunciado, String respostaCorreta, String alternativas) {
         GerenciarPerguntas gerenciador = new GerenciarPerguntas("ArmazenarPerguntas.txt");
         String[] alternativasArray = alternativas.split(",");
+       
+        if (alternativasArray.length > 4) {
+            System.out.println("Erro: O número de alternativas deve ser no máximo 4.");
+            return false;
+        }
+    
         Questao novaQuestao = new Questao(enunciado, respostaCorreta, alternativasArray);
         
         try {

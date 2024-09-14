@@ -32,6 +32,7 @@ public class App extends Application {
     private Text resultado;
     private Button proxima;
     private Button reiniciar;
+    
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -198,18 +199,33 @@ public class App extends Application {
         enunciado.setStyle("-fx-font-size: 18px; -fx-font-weight: bold; -fx-fill: #333;"); //negrito
 
 
-        if (questoes.size() > 0) alternativa1.setText(questoes.get(0));
-        if (questoes.size() > 1) alternativa2.setText(questoes.get(1));
-        if (questoes.size() > 2) alternativa3.setText(questoes.get(2));
-        if (questoes.size() > 3) alternativa4.setText(questoes.get(3));
-        if (questoes.size() > 4) alternativa5.setText(questoes.get(4));
+        alternativa1.setVisible(false);
+    alternativa2.setVisible(false);
+    alternativa3.setVisible(false);
+    alternativa4.setVisible(false);
+    alternativa5.setVisible(false);
 
-        // garante q todas as alternativas estejam visíveis ao carregar uma nova pergunta
-         alternativa1.setVisible(true);
-         alternativa2.setVisible(true);
-         alternativa3.setVisible(true);
-         alternativa4.setVisible(true);
-         alternativa5.setVisible(true);
+    // Exibe somente os botões necessários
+    if (questoes.size() > 0) {
+        alternativa1.setText(questoes.get(0));
+        alternativa1.setVisible(true);
+    }
+    if (questoes.size() > 1) {
+        alternativa2.setText(questoes.get(1));
+        alternativa2.setVisible(true);
+    }
+    if (questoes.size() > 2) {
+        alternativa3.setText(questoes.get(2));
+        alternativa3.setVisible(true);
+    }
+    if (questoes.size() > 3) {
+        alternativa4.setText(questoes.get(3));
+        alternativa4.setVisible(true);
+    }
+    if (questoes.size() > 4) {
+        alternativa5.setText(questoes.get(4));
+        alternativa5.setVisible(true);
+    }
 
         resultado.setVisible(false);
         proxima.setVisible(false);

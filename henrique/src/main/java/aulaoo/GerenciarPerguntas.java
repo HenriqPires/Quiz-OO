@@ -38,13 +38,17 @@ public class GerenciarPerguntas {
             while ((linha = reader.readLine()) != null) {
                 String enunciado = linha;
                 String respostaCorreta = reader.readLine();
-                String[] alternativas = new String[5];
+                ArrayList<String> alternativas = new ArrayList<>();
+            String alternativa;
 
-                for (int i = 0; i < 5; i++) {
-                    alternativas[i] = reader.readLine();
-                }
+            while ((alternativa = reader.readLine()) != null && !alternativa.isEmpty()) {
+                alternativas.add(alternativa);
+            }
 
-                perguntas.add(new Questao(enunciado, respostaCorreta, alternativas));
+            if (alternativas.size() < 1 || alternativas.size() > 5) {
+                throw new IOException("Número de alternativas inválido para a pergunta: " + enunciado);
+            }
+                perguntas.add(new Questao(enunciado, respostaCorreta, alternativas.toArray(new String[0])));
                 reader.readLine(); // pular linha em branco entre perguntas
             }
         }
